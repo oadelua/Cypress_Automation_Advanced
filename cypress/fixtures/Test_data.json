@@ -1,5 +1,13 @@
 {
   "company_name": "OBA Automation Enterprise",
   "zip_code": "6780976",
-  "city": "Abudu Shaker"
+  "city": "Abudu Shaker",
+  "user_name": "Automation Guru",
+  "email": "automation*1.cypress@yopmail.com",
+  "password": "CypressWonderland",
+  "first_name": "Automation",
+  "last_name": "Guru",
+  "address": "Ribadu Shaker Avenue, Off Indaboski Quaters",
+  "state": "Kilobade",
+  "mobile_number": "1234567"
 }

@@ -1,5 +1,5 @@
 const user_name = 'Automation Guru'
-const email = 'automation7.cypress@yopmail.com'
+const email = 'automation^.cypress@yopmail.com'
 const password = 'CypressWonderland'
 const first_name = 'Automation'
 const last_name = 'Guru'
@@ -40,12 +40,6 @@ describe('Automation_Exercise', () => {
         cy.get('button[data-qa="create-account"]').should('be.visible').and('have.text', 'Create Account')
         cy.get('button[data-qa="create-account"]').click()
         cy.contains('Account Created!').should('be.visible').and('have.text','Account Created!')
-
-
-
-
-
-
 
     })
 
