@@ -13,7 +13,7 @@ const generateRandom = new Chance();
 
 const user_name = 'Automation Guru'
 const password = 'CypressWonderland'
-//const first_name = 'Automation'
+const first_name = 'Automation'
 const last_name = 'Guru'
 const company = 'Ribadu Shaker'
 const address = '1 Ribadu Shaker Avenue, Off Indaboski Quaters'
@@ -24,7 +24,7 @@ const mobile_number = '1234567'
 
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
-Cypress.Commands.add('signUp',(email,first_name) => {
+Cypress.Commands.add('signUp',(email) => {
 
         cy.get('a[href="/login"]').click()
         cy.get('input[data-qa="signup-name"]').type(user_name)
@@ -55,6 +55,15 @@ Cypress.Commands.add('signUp',(email,first_name) => {
 Cypress.Commands.add('GenerateEmail',()=>{
     let name = generateRandom.name()
     return name;
+})
+
+Cypress.Commands.add('Login', (email, password) =>{
+
+    cy.get('input[placeholder="Email Address"]').eq(0).type(email)
+    cy.get('input[data-qa="login-password"]').type(password)
+    cy.get('button[data-qa="login-button"]').click()
+
+
 })
 //
 //

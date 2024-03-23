@@ -33,8 +33,8 @@ describe('Automation_Exercise', () => {
         cy.get('#zipcode').type(testData.zip_code)
         cy.get('#mobile_number').type(testData.mobile_number)
         cy.get('button[data-qa="create-account"]').should('be.visible').and('have.text', 'Create Account')
-        //cy.get('button[data-qa="create-account"]').click()
-        //cy.contains('Account Created!').should('be.visible').and('have.text', 'Account Created!')
+        cy.get('button[data-qa="create-account"]').click()
+        cy.contains('Account Created!').should('be.visible').and('have.text', 'Account Created!')
 
     })
 
